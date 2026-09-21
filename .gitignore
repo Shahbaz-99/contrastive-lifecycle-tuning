@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Trained models (large binary files - regenerate via training scripts,
+# or use Git LFS if you want to version them)
+model_a/
+model_b/
+model_a_checkpoints/
+model_b_checkpoints/
+
+# OS
+.DS_Store
