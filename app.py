@@ -54,11 +54,29 @@ standard_examples = [
     "I found this laptop to be excellent.",
     "The customer support was terrible.",
     "This course was genuinely impressive.",
+    "The hotel room was disappointing overall.",
+    "My experience with this app was fantastic.",
 ]
+
+# 10 drift examples, deliberately covering different DRIFT SUBTYPES so the
+# demo shows the problem isn't just "slang" -- it's several distinct ways
+# real-world text differs from clean training data:
+#   1-2  slang (positive / negative)
+#   3-4  emoji-heavy (positive / negative)
+#   5-6  sarcasm (says positive words, means negative / vice versa)
+#   7-8  abbreviations & typos (positive / negative)
+#   9-10 very short / minimal social-media style (positive / negative)
 drift_examples = [
-    "ngl this app is actually fire 🔥",
-    "the delivery was mid tbh",
-    "oh great, this software update broke again, love that for me",
+    "ngl this app is actually fire 🔥",                              # 1. slang - positive
+    "the delivery was mid tbh",                                      # 2. slang - negative
+    "obsessed w this laptop rn 😭❤️",                                 # 3. emoji - positive
+    "this restaurant was a disaster 💀🚮",                            # 4. emoji - negative
+    "oh great, this software update broke again, love that for me",  # 5. sarcasm - actually negative
+    "wasn't expecting much but this course actually delivered",      # 6. sarcasm - actually positive
+    "gr8 service ngl, wud recommend fr",                              # 7. abbreviation/typo - positive
+    "tbh dis phone kinda trash not gonna lie",                        # 8. abbreviation/typo - negative
+    "coffee?? 10/10.",                                                # 9. short/minimal - positive
+    "the flight. never again.",                                       # 10. short/minimal - negative
 ]
 
 # ---------------------------------------------------------------------
