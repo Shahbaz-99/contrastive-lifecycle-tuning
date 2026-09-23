@@ -77,7 +77,7 @@ models identically.
 
 ```bash
 # 1. Clone and enter the repo
-git clone https://github.com/shahbaz-99/contrastive-lifecycle-tuning.git
+git clone https://github.com/<your-username>/contrastive-lifecycle-tuning.git
 cd contrastive-lifecycle-tuning
 
 # 2. Create a virtual environment

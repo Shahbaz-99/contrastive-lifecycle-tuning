@@ -3,13 +3,12 @@ venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.gradio/
 
 # Trained models (large binary files - regenerate via training scripts,
 # or use Git LFS if you want to version them)
-model_a/
-model_b/
-model_a_checkpoints/
-model_b_checkpoints/
+models/
+*_checkpoints/
 
 # OS
 .DS_Store

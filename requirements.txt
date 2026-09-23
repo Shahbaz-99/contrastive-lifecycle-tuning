@@ -6,3 +6,11 @@ gradio
 accelerate
 pandas
 numpy
+torch
+transformers
+datasets
+scikit-learn
+gradio
+accelerate
+pandas
+numpy
