@@ -403,6 +403,7 @@
 
 import torch
 import gradio as gr
+from embedding_tab import build_embedding_tab
 from concurrent.futures import ThreadPoolExecutor
 from transformers import (
     AutoTokenizer,
@@ -410,6 +411,7 @@ from transformers import (
     T5Tokenizer,
     T5ForConditionalGeneration,
 )
+
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -799,6 +801,9 @@ with gr.Blocks(title="Systemic Drift Lab · Ethical Intelligence") as demo:
                 outputs=[chatbot_a, chatbot_b, msg]
             )
             clear_btn.click(fn=clear_both_chats, outputs=[chatbot_a, chatbot_b, msg])
+            
+        with gr.Tab("Embedding Space"):
+            build_embedding_tab()
 
     gr.HTML("<div id='footerbar'>Built by Ethical Intelligence · Systemic Drift Lab</div>")
 

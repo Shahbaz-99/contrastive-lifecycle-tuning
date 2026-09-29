@@ -12,3 +12,4 @@ models/
 
 # OS
 .DS_Store
+chat_model_b/model.safetensors
